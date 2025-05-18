@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Lenovo/IdeaProjects/OpenCart_Automation/UserRegistration_testng.xml">
+        <classes/>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Lenovo/IdeaProjects/OpenCart_Automation/src/test/java/testCases/AddAddress">
+        <classes>
+            <class name="testCases.AddAddress.TC1_AddAddress">
+                <methods>
+                    <include name="AddAddressTC1"/>
+                </methods>
+            </class>
+            <class name="testCases.AddAddress.TC2_AddAddress">
+                <methods>
+                    <include name="AddAddressTC2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Lenovo/IdeaProjects/OpenCart_Automation/src/test/java/testCases/ForgotPassword">
+        <classes>
+            <class name="testCases.ForgotPassword.TC1_ForgotPassword">
+                <methods>
+                    <include name="ForgotPasswordTC_1"/>
+                </methods>
+            </class>
+            <class name="testCases.ForgotPassword.TC2_ForgotPassword">
+                <methods>
+                    <include name="ForgotPasswordTC_2"/>
+                </methods>
+            </class>
+            <class name="testCases.ForgotPassword.TC3_ForgotPassword">
+                <methods>
+                    <include name="ForgotPasswordTC_3"/>
+                </methods>
+            </class>
+            <class name="testCases.ForgotPassword.TC4_ForgotPassword">
+                <methods>
+                    <include name="ForgotPasswordTC_4"/>
+                </methods>
+            </class>
+            <class name="testCases.ForgotPassword.TC5_ForgotPassword">
+                <methods>
+                    <include name="ForgotPasswordTC_5"/>
+                </methods>
+            </class>
+            <class name="testCases.ForgotPassword.TC6_ForgotPassword">
+                <methods>
+                    <include name="ForgotPasswordTC_6"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Lenovo/IdeaProjects/OpenCart_Automation/src/test/java/testCases/LogIn">
+        <classes>
+            <class name="testCases.LogIn.TC1_LogIn">
+                <methods>
+                    <include name="LogInTC_1"/>
+                </methods>
+            </class>
+            <class name="testCases.LogIn.TC2_LogIn">
+                <methods>
+                    <include name="LogInTC_2"/>
+                </methods>
+            </class>
+            <class name="testCases.LogIn.TC3_LogIn">
+                <methods>
+                    <include name="LogInTC_3"/>
+                </methods>
+            </class>
+            <class name="testCases.LogIn.TC4_LogIn">
+                <methods>
+                    <include name="LogInTC_4"/>
+                </methods>
+            </class>
+            <class name="testCases.LogIn.TC5_LogIn">
+                <methods>
+                    <include name="LogInTC_5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Lenovo/IdeaProjects/OpenCart_Automation/src/test/java/testCases/UserRegistration">
+        <classes>
+            <class name="testCases.UserRegistration.TC1_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_1"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC2_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_2"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC3_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_3"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC4_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_4"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC5_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_5"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC6_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_6"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC7_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_7"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC8_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_8"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

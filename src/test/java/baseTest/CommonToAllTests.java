@@ -13,7 +13,7 @@ public class CommonToAllTests {
     public WebDriver driver;
     @BeforeMethod
     public void StartBrowser(){
-        driver=new EdgeDriver();
+        driver=new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

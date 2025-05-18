@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Lenovo/IdeaProjects/OpenCart_Automation/src/test/java/testCases/LogIn">
+        <classes>
+            <class name="testCases.LogIn.TC1_LogIn">
+                <methods>
+                    <include name="LogInTC_1"/>
+                </methods>
+            </class>
+            <class name="testCases.LogIn.TC2_LogIn">
+                <methods>
+                    <include name="LogInTC_2"/>
+                </methods>
+            </class>
+            <class name="testCases.LogIn.TC3_LogIn">
+                <methods>
+                    <include name="LogInTC_3"/>
+                </methods>
+            </class>
+            <class name="testCases.LogIn.TC4_LogIn">
+                <methods>
+                    <include name="LogInTC_4"/>
+                </methods>
+            </class>
+            <class name="testCases.LogIn.TC5_LogIn">
+                <methods>
+                    <include name="LogInTC_5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

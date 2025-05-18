@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Lenovo/IdeaProjects/OpenCart_Automation">
+        <classes>
+            <class name="testCases.UserRegistration.TC1_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_1"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC2_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_2"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC3_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_3"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC4_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_4"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC5_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_5"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC6_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_6"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC7_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_7"/>
+                </methods>
+            </class>
+            <class name="testCases.UserRegistration.TC8_UserRegistration">
+                <methods>
+                    <include name="UserRegTC_8"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -3,7 +3,7 @@ package projectPageNames;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class UpdateAccountPage {
+public class UpdateAccountPage{
 
     WebDriver driver;
 

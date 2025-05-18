@@ -1,10 +1,11 @@
 package projectPageNames;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class AddUserAddressPage {
+public class AddUserAddressPage{
     WebDriver driver;
 
     public AddUserAddressPage(WebDriver driver){
@@ -24,6 +25,12 @@ public class AddUserAddressPage {
     By Checkbox_DefaultAddress_No=By.xpath("//input[@id='input-default-no']");
     By Continue_Button=By.xpath("//button[@type='submit' and @class='btn btn-primary']");
     By Back_Button=By.xpath("//a[@class='btn btn-light']");
+    By Validation_BlankFirstName=By.xpath("//div[@id='error-firstname']");
+    By Validation_BlankLastName=By.xpath("//div[@id='error-lastname']");
+    By Validation_BlankAddressLine1=By.xpath("//div[@id='error-address-1']");
+    By Validation_BlankCity=By.xpath("//div[@id='error-city']");
+    By Validation_BlankPostalCode=By.xpath("//div[@id='error-postcode']");
+    By Validation_BlankState=By.xpath("//div[@id='error-zone']");
 
     public void enterFname(String firstName){
         driver.findElement(Textbox_Fname).sendKeys(firstName);
@@ -58,9 +65,9 @@ public class AddUserAddressPage {
         se.selectByValue("99");
     }
 
-    public void SelectSateName(){
+    public void selectSateName(){
         Select se1=new Select(driver.findElement(PickList_RegionState));
-        se1.selectByVisibleText("Delhi");
+        se1.selectByVisibleText("Karnataka");
     }
 
     public void checkboxDefaultAddressYes(){
@@ -79,4 +86,32 @@ public class AddUserAddressPage {
         driver.findElement(Back_Button).click();
     }
 
+    public void Scroll(){
+        JavascriptExecutor js=(JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(0,2000);");
+    }
+
+    public String getBlankFirstNameMessage(){
+        return driver.findElement(Validation_BlankFirstName).getText();
+    }
+
+    public String getBlankLastNameMessage(){
+        return driver.findElement(Validation_BlankLastName).getText();
+    }
+
+    public String getBlankAddressLine1Message(){
+        return driver.findElement(Validation_BlankAddressLine1).getText();
+    }
+
+    public String getBlankCityMessage(){
+        return driver.findElement(Validation_BlankCity).getText();
+    }
+
+    public String getBlankPostalCodeMessage(){
+        return driver.findElement(Validation_BlankPostalCode).getText();
+    }
+
+    public String getBlankStateMessage(){
+        return driver.findElement(Validation_BlankState).getText();
+    }
 }

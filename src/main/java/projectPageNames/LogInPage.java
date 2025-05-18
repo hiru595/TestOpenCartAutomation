@@ -3,7 +3,7 @@ package projectPageNames;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LogInPage {
+public class LogInPage{
     WebDriver driver;
 
     public LogInPage(WebDriver driver){
@@ -15,6 +15,7 @@ public class LogInPage {
     By Text_LogInEmail=By.xpath("//input[@name='email' or id='input-email']");
     By Text_LogInPassword=By.xpath("//input[@name='password' or id='input-password']");
     By Button_LogIn=By.xpath("//button[@type='submit']");
+    By LogIn_ErrorMessage=By.xpath("//dirv[@class='alert alert-danger alert-dismissible']");
 
     public void clickMyAccountDropdown(){
         driver.findElement(Dropdown_MyAccount).click();
@@ -34,6 +35,10 @@ public class LogInPage {
 
     public void clickLogInBtn(){
         driver.findElement(Button_LogIn).click();
+    }
+
+    public String getLogInErrorMessage(){
+        return driver.findElement(LogIn_ErrorMessage).getText();
     }
 
 }

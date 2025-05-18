@@ -3,7 +3,7 @@ package projectPageNames;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ForgotPasswordPage {
+public class ForgotPasswordPage{
     WebDriver driver;
 
     public ForgotPasswordPage(WebDriver driver){
@@ -13,9 +13,11 @@ public class ForgotPasswordPage {
     By Dropdown_MyAccount=By.xpath("//a[@class='dropdown-toggle show']");
     By Link_LogIn=By.linkText("Login");
     By Link_ForgotPassword=By.linkText("Forgotten Password");
-    By ForgotPassword_Email=By.linkText("//input[@name='email' or @id='input-email']");
+    By ForgotPassword_Email=By.xpath("//input[@name='email' or @id='input-email']");
     By Button_Continue=By.xpath("//button[@type='submit' or class='btn btn-primary']");
     By Button_Back=By.linkText("Back");
+    By SuccessMessage_ForgotPassword=By.xpath("//div[@class='alert alert-success alert-dismissible']");
+    By ErrorMesage_ForgotPassword=By.xpath("//div[@class='alert alert-danger alert-dismissible']");
 
     public void clickMyAccountDropdown(){
         driver.findElement(Dropdown_MyAccount).click();
@@ -41,4 +43,11 @@ public class ForgotPasswordPage {
         driver.findElement(Button_Back).click();
     }
 
+    public String GetSuccessMsg(){
+       return driver.findElement(SuccessMessage_ForgotPassword).getText();
+    }
+
+    public String GetErrorMsg(){
+        return driver.findElement(ErrorMesage_ForgotPassword).getText();
+    }
 }
